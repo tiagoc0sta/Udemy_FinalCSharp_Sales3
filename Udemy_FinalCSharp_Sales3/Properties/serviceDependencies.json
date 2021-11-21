@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:Udemy_FinalCSharp_Sales3Context"
+    }
+  }
+}

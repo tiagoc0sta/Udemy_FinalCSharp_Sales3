@@ -1,6 +1,6 @@
 using System;
 
-namespace Udemy_FinalCSharp_Sales3.Models
+namespace Udemy_FinalCSharp_Sales3.Models.ViewModels
 {
     public class ErrorViewModel
     {

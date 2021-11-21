@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using Udemy_FinalCSharp_Sales3.Models;
+using Udemy_FinalCSharp_Sales3.Models.ViewModels;
 
 namespace Udemy_FinalCSharp_Sales3.Controllers
 {

@@ -17,7 +17,8 @@ namespace Udemy_FinalCSharp_Sales3.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Sales C# course";
+            ViewData["email"] = "tiagodpv@gmail.com";
 
             return View();
         }

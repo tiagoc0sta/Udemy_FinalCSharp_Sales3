@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Udemy_FinalCSharp_Sales3.Models;
 using Udemy_FinalCSharp_Sales3.Data;
+using Udemy_FinalCSharp_Sales3.Services;
 
 
 namespace Udemy_FinalCSharp_Sales3
@@ -45,7 +46,8 @@ namespace Udemy_FinalCSharp_Sales3
                         builder.MigrationsAssembly("Udemy_FinalCSharp_Sales3")));
 
             services.AddScoped<SeedingService>();
-            
+            services.AddScoped<SellerService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

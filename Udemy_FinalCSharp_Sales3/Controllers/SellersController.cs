@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Udemy_FinalCSharp_Sales3.Models;
 using Udemy_FinalCSharp_Sales3.Services;
 
 namespace Udemy_FinalCSharp_Sales3.Controllers
@@ -21,5 +22,19 @@ namespace Udemy_FinalCSharp_Sales3.Controllers
             var list = _sellerService.FindAll();
             return View(list);
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Seller seller)
+        {
+            _sellerService.Insert(seller);
+            return RedirectToAction(nameof(Index));
+        }
+
     }
 }

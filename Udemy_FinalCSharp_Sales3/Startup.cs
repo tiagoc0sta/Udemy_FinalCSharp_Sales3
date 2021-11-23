@@ -47,6 +47,7 @@ namespace Udemy_FinalCSharp_Sales3
 
             services.AddScoped<SeedingService>();
             services.AddScoped<SellerService>();
+            services.AddScoped<DepartmentService>();
 
         }
 

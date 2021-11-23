@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Udemy_FinalCSharp_Sales3.Data;
 
 namespace Udemy_FinalCSharp_Sales3.Migrations
 {
     [DbContext(typeof(Udemy_FinalCSharp_Sales3Context))]
-    partial class Udemy_FinalCSharp_Sales3ContextModelSnapshot : ModelSnapshot
+    [Migration("20211122233745_DepartmentForeignKey")]
+    partial class DepartmentForeignKey
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
